@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Personal Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">My<span>World</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="me.html">About Me</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="daily.html">Daily Activity</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Kirim Pesan</h2>
+    <p>Jika ada pertanyaan atau ingin berdiskusi, silakan isi formulir di bawah ini:</p>
+    <form style="margin-top: 1.5rem; max-width: 600px;">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda..." required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda..." required>
+      </div>
+      <div class="form-group">
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" rows="5" placeholder="Tuliskan pesan Anda..." required></textarea>
+      </div>
+      <button type="submit" class="btn" style="border: none; cursor: pointer;">Kirim Pesan</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Personal Website. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
