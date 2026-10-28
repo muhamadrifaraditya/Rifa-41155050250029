@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan JavaScript - Ubah Warna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      transition: background-color 0.5s;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      background-color: #333;
+      color: white;
+    }
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ubah Warna Background</h1>
+  <p>Klik tombol di bawah untuk mengubah warna latar belakang halaman ini.</p>
+  <button onclick="ubahWarna()">Ganti Warna</button>
+
+  <script>
+    const warna = ["#FF5733", "#33FF57", "#3357FF", "#F39C12", "#8E44AD", "#1ABC9C"];
+
+    function ubahWarna() {
+      const acak = Math.floor(Math.random() * warna.length);
+      document.body.style.backgroundColor = warna[acak];
+    }
+  </script>
+
+</body>
+</html>
